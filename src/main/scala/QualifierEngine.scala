@@ -36,7 +36,7 @@ object QualifierEngine extends App{
   }
 
   // Function to convert string date to LocalDate
-  def strDateConverter(dateString: String, pattern: String) = {
+  def dateConverter(dateString: String, pattern: String) = {
     val formatter = DateTimeFormatter.ofPattern(pattern)
     LocalDate.parse(dateString, formatter)
   }
@@ -51,8 +51,8 @@ object QualifierEngine extends App{
   // Function to process order and extract relevant information
   def processOrder(order: String) = {
     val orderParts = order.split(",")
-    val orderDate = strDateConverter(orderParts(0), "yyyy-MM-dd'T'HH:mm:ss'Z'")
-    val expiryDate = strDateConverter(orderParts(2), "yyyy-MM-dd")
+    val orderDate = dateConverter(orderParts(0), "yyyy-MM-dd'T'HH:mm:ss'Z'")
+    val expiryDate = dateConverter(orderParts(2), "yyyy-MM-dd")
     val daysToExpiry = ChronoUnit.DAYS.between(orderDate, expiryDate).toInt
     val (productCategory, productName) = splitProductNameCategory(orderParts(1))
     val quantity = orderParts(3).toInt
