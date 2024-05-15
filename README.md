@@ -74,10 +74,10 @@ This table structure is used to store the processed order data, including order 
 2. **Import Project**: Import the project into your IntelliJ IDE.
 
 3. **Database Configuration**:
-   - Update the database connection details in the code (`DiscountsEngine.scala`) with your Oracle database URL, username, and password.
+   - Update the database connection details in the code (`QualifierEngine.scala`) with your Oracle database URL, username, and password.
 
 4. **Run Application**:
-   - Compile and run the `DiscountsEngine.scala` file to execute the discount calculation process.
+   - Compile and run the `QualifierEngine.scala` file to execute the discount calculation process.
    - Ensure that the required dependencies are installed and the CSV file containing order data (`TRX1000.csv`) is available in the specified location.
 
 5. **Verify Results**:
