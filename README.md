@@ -68,7 +68,7 @@ This table structure is used to store the processed order data, including order 
 
 1. **Clone Repository**:
    ```
-   git clone https://github.com/HusseinK01/Rules-Engine-using-Scala.git
+   git clone https://github.com/Hadyy97/Scala_Discount_Rule_Qualifier.git
    ```
 
 2. **Import Project**: Import the project into your IntelliJ IDE.
